@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    background-image: url("../images/background-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Home section text block */
+  #home {
+    padding: 100px 0 60px 0;
+    background-color: transparent /* transparent forest green overlay */
+  }
+  
+  #home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(56, 114, 56);
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  #home p {
+    font-size: 1.2rem;
+    color: #dbefdb;
+    text-shadow: 1px 1px 3px #000;
+  }
+  
+  /* Prediction form container */
+  #predict {
+    background-color: rgba(255, 255, 255, 0.1); /* semi-transparent white */
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 12px rgba(0, 64, 0, 0.3);
+  }
+  
+  /* Labels */
+  #predict label {
+    font-weight: 500;
+    color: black;
+  }
+  
+  /* Dropdowns */
+  #predict select {
+    background-color: #5aa75a;
+    color: #000;
+    border-radius: 5px;
+    padding: 6px;
+  }
+  
+  /* Green Predict button */
+#predict .btn-primary {
+  background-color: #2e8b57 !important;  /* solid green */
+  border: none !important;
+  font-weight: bold;
+  color: white !important;              /* white text */
+}
+
+#predict .btn-primary:hover {
+  background-color: #3cb371 !important; /* lighter green on hover */
+  transition: 0.3s;
+}
+
+  /* Result text */
+  #predictionResult {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2e8b57; /* matching the green theme */
+    text-align: center;
+  }
+  
+  .hero-section {
+    margin-top: 20px; /* or lower, e.g., 10px or 0px */
+    padding-top: 10px; /* adjust as needed */
+  }
+
+  .custom-green {
+    background-color: #28a745; /* Bootstrap green */
+    color: rgb(82, 209, 82);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+  
+  .custom-green:hover {
+    background-color: #218838;
+  }
+  
+  /* General Body and Layout Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #006400;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #004d00;
+}
+
+footer {
+  background-color: #2c752c;
+  color: white;
+  padding: 10px;
+}
+
+/* Info Boxes */
+.info-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.info-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Button Styling */
+button.btn-info {
+  background-color: #1e90ff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-info:hover {
+  background-color: #1c86ee;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-box {
+      margin-bottom: 20px;
+  }
+}
+
+
+/*precaustion */
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Kyasanur Forest Disease(Monkey Fever)</title>
+    <link rel="stylesheet" href="style.css"> <!-- Your custom CSS file -->
+    <script defer src="script.js"></script>
+    <!-- Add Bootstrap CSS link for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <a class="navbar-brand text-white font-weight-bold" href="#">Monkey Fever Predictor🐒</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href='/precautions'>Precautions</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content section -->
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <h1 class="text-center mb-4">Kyasanur Forest Disease(KFD) - Monkey Fever</h1>
+
+                <!-- Info Boxes -->
+                <div class="row">
+                    <!-- Box 1: What is KFD -->
+                    <div class="col-md-4">
+                        <div class="info-box">
+<!--                            <img src="kfd ex.jpg" alt="KFD Image" class="info-img">-->
+                                    <img src="{{ url_for('static', filename='monkey-fever01_201901187570.jpg') }}" alt="Monkeys in Forest" class="img-fluid w-100" style="max-height: 500px; object-fit: cover;">
+
+                            <h3>What is KFD?</h3>
+                            <p>Kyasanur Forest Disease is a viral disease primarily found in India, transmitted through ticks. It is caused by the Kyasanur Forest Disease Virus (KFDV).</p>
+                        </div>
+                    </div>
+                    <!-- Box 2: Why it happens -->
+                    <div class="col-md-4">
+                        <div class="info-box">
+<!--                            <img src="India-India-virus-India-outbreak-India-monkey-fever-India-Kyasanur-Forest-disease-India-Sindhudurg-India-tick-repellent-914510-300x158.jpg" alt="Transmission" class="info-img">-->
+                                   <img src="{{ url_for('static', filename='India-India-virus-India-outbreak-India-monkey-fever-India-Kyasanur-Forest-disease-India-Sindhudurg-India-tick-repellent-914510-300x158.jpg') }}" alt="Monkeys in Forest" class="img-fluid w-100" style="max-height: 500px; object-fit: cover;">
+
+                            <h3>Why it Happens</h3>
+                            <p>The disease is transmitted by ticks and affects both animals and humans. The main reservoirs for the virus are monkeys and rodents in forested regions.</p>
+                        </div>
+                    </div>
+                    <!-- Box 3: Virus Information -->
+                    <div class="col-md-4">
+                        <div class="info-box">
+<!--                            <img src="Kyasanur_Forest_disease_virus_ecology.jpg" alt="KFD Virus" class="info-img">-->
+                            <img src="{{ url_for('static', filename='Kyasanur_Forest_disease_virus_ecology.jpg') }}" alt="Monkeys in Forest" class="img-fluid w-100" style="max-height: 500px; object-fit: cover;">
+
+                            <h3>The KFD Virus</h3>
+                            <p>KFDV belongs to the flavivirus family, causing severe illness in humans and monkeys. Symptoms include fever, headache, and in some cases, hemorrhagic fever.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Button Section -->
+                <div class="text-center mt-5">
+                    <button class="btn btn-info" onclick="toggleDetails()">Click to Learn More</button>
+                    <div id="more-info" style="display: none;" class="mt-3">
+                        <p>The disease has a long history of affecting local communities. <br>
+                            It is important to take preventive measures when visiting forested areas in endemic regions.<br>
+                            Kyasanur forest disease (KFD) or monkey fever is a unique public health problem along the belts of Western Ghats of India. <br>
+                            The disease is caused by KFD virus (KFDV) which is an arbovirus, family Flaviviridae. <br>
+                            Humans are infected by the bite of tick and present with fever, sometimes haemorrhagic and/or neurological features. <br>
+                            Majority of patients (80%) will recover without any consequences. However, about 20 per cent of patients manifest with biphasic presentation of symptoms, and of them, a few will develop severe haemorrhagic or neurological symptoms. <br>
+                            The disease was limited to the Western Ghats of Karnataka State of India for about seven decades, however, since the last five years cases have been reported from adjacent States of Karnataka along the course of Western Ghats. <br>
+                            The burden of the disease is increasing with the years. Detailed clinical and epidemiological aspects of KFD need to be explored for better understanding of the disease. <br>
+                            This review provides information in detail on the clinical, epidemiological, advanced laboratory diagnosis and prevention aspects of KFD.
+                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-center">&copy; 2025 Kyasanur Forest Disease-Monkey Fever</p>
+    </footer>
+
+    <!-- Add Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript for interactive button
+        function toggleDetails() {
+            var moreInfo = document.getElementById('more-info');
+            if (moreInfo.style.display === 'none') {
+                moreInfo.style.display = 'block';
+            } else {
+                moreInfo.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
