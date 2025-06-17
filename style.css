@@ -1,0 +1,171 @@
+body {
+    background-image: url("../images/background-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Home section text block */
+  #home {
+    padding: 100px 0 60px 0;
+    background-color: transparent /* transparent forest green overlay */
+  }
+  
+  #home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(56, 114, 56);
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  #home p {
+    font-size: 1.2rem;
+    color: #dbefdb;
+    text-shadow: 1px 1px 3px #000;
+  }
+  
+  /* Prediction form container */
+  #predict {
+    background-color: rgba(255, 255, 255, 0.1); /* semi-transparent white */
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 12px rgba(0, 64, 0, 0.3);
+  }
+  
+  /* Labels */
+  #predict label {
+    font-weight: 500;
+    color: black;
+  }
+  
+  /* Dropdowns */
+  #predict select {
+    background-color: #5aa75a;
+    color: #000;
+    border-radius: 5px;
+    padding: 6px;
+  }
+  
+  /* Green Predict button */
+#predict .btn-primary {
+  background-color: #2e8b57 !important;  /* solid green */
+  border: none !important;
+  font-weight: bold;
+  color: white !important;              /* white text */
+}
+
+#predict .btn-primary:hover {
+  background-color: #3cb371 !important; /* lighter green on hover */
+  transition: 0.3s;
+}
+
+  /* Result text */
+  #predictionResult {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2e8b57; /* matching the green theme */
+    text-align: center;
+  }
+  
+  .hero-section {
+    margin-top: 20px; /* or lower, e.g., 10px or 0px */
+    padding-top: 10px; /* adjust as needed */
+  }
+
+  .custom-green {
+    background-color: #28a745; /* Bootstrap green */
+    color: rgb(82, 209, 82);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+  
+  .custom-green:hover {
+    background-color: #218838;
+  }
+  
+  /* General Body and Layout Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #006400;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #004d00;
+}
+
+footer {
+  background-color: #2c752c;
+  color: white;
+  padding: 10px;
+}
+
+/* Info Boxes */
+.info-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.info-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Button Styling */
+button.btn-info {
+  background-color: #1e90ff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-info:hover {
+  background-color: #1c86ee;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-box {
+      margin-bottom: 20px;
+  }
+}
+
+
+/*precaustion */
+
+
